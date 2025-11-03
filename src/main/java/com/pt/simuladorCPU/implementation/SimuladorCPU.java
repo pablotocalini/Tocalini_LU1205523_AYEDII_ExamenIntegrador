@@ -44,7 +44,7 @@ public class SimuladorCPU implements ISimuladorCPU {
     public void agregarProceso(String proceso) {
         try {
             this.colaProcesosEntrantes.add(proceso);    // Agrego el proceso a la cola de procesos entrantes
-        } catch (Exception e) {
+        } catch (IllegalStateException e) {
             throw new IllegalStateException("Error al agregar proceso " + proceso);
         }
     }
@@ -151,7 +151,7 @@ public class SimuladorCPU implements ISimuladorCPU {
     /**
      * Muestra el estado completo del simulador (3 listas)
      *
-     * Este metodo se implementa para que sea mas legible el main
+     * Este metodo se implementa para que sea más legible el main
      *
      * @param titulo Descripción del estado a mostrar
      */

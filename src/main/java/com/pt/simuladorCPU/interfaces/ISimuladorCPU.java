@@ -58,7 +58,7 @@ public interface ISimuladorCPU {
     /**
      * Muestra el estado completo del simulador (3 listas)
      *
-     * Este metodo se implementa para que sea mas legible el main
+     * Este metodo se implementa para que sea más legible el main
      *
      * @param titulo Descripción del estado a mostrar
      */
